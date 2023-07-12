@@ -1,23 +1,26 @@
 .slider {
   margin: 100px 12px;
+  .slider-title {
+    text-align: center;
+    margin-top: -43px;
+    margin-bottom: 26px;
+    font-family: $font-primary;
+  }
   .first-screen-slider {
-    max-width: 1020px;
+    max-width: 1050px;
     margin: 0 auto;
-    .slick-slide {
-      width: 90%;
-      height: 100%;
-      min-height: 35px;
-
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      margin: 0 10px;
+    .slick-list {
+      margin-bottom: 42px;
+      .slick-slide {
+        height: 100%;
+        min-height: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin: 0 20px;
+      }
     }
   }
-  .slick-track {
-    display: flex;
-  }
-
   .slick-dots {
     position: relative;
     padding: 0;
@@ -38,7 +41,6 @@
       list-style: none;
       margin: 0 3px;
     }
-
     button {
       outline: none;
       font-size: 0;

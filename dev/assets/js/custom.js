@@ -2,8 +2,8 @@ $(document).ready(function () {
   $(".first-screen-slider").slick({
     dots: true,
     speed: 1000,
-    autoplay: true,
-    autoplaySpeed: 5000,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
     slidesToShow: 6,
     slidesToScroll: 4,
     arrows: false,
@@ -33,4 +33,12 @@ $(document).ready(function () {
       },
     ],
   });
+
+  // Fancybox.bind("[data-fancybox]", {
+  //   loop: true,
+  //   buttons: ["zoom", "slideShow", "fullScreen", "close"],
+  //   animationEffect: "fade",
+  //   transitionEffect: "slide",
+  //   animationDuration: 600,
+  // });
 });

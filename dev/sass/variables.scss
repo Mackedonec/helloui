@@ -42,3 +42,33 @@ $gap-lg: 45px;
 @mixin text-center {
   text-align: center;
 }
+
+@mixin xxl {
+  @media screen and (max-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}

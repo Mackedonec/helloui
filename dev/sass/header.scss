@@ -2,36 +2,39 @@ header {
   .navbar-collapse {
     display: flex;
     justify-content: flex-end;
-
-    @media screen and (max-width: 991px) {
+    @include lg {
+      position: relative;
+      top: 10px;
       background-color: #3e3d3db8;
       margin: 0 -50px;
-      margin-top: 10px;
-      margin-bottom: 30px;
     }
   }
   .navbar {
     max-width: 1340px;
-    margin: 25px auto 0;
+    margin: 20px auto 0;
+    .container-fluid {
+      display: flex;
+      justify-content: flex-start;
+    }
     .navbar-brand {
       img {
-        @media screen and (max-width: 575px) {
+        @include sm {
           width: 80px;
           margin: 0;
           z-index: -1;
         }
         @media screen and (max-width: 350px) {
-          display: none;
+          @include visually-hidden;
         }
       }
     }
     .navbar-nav {
       max-width: 525px;
       margin-right: 430px;
-      @media screen and (max-width: 1192px) {
+      @include xl {
         margin-right: 300px;
       }
-      @media screen and (max-width: 991px) {
+      @include lg {
         margin: auto;
       }
       .nav-item {
@@ -45,7 +48,7 @@ header {
           color: #050038;
           font-family: $font-primary;
           font-weight: 500;
-          @media screen and (max-width: 991px) {
+          @include lg {
             color: #ffffff;
           }
           &:hover {
@@ -64,7 +67,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    @media screen and (max-width: 575px) {
+    @include sm {
       max-width: 170px;
       top: 8px;
     }
@@ -74,11 +77,11 @@ header {
       font-family: $font-secondary;
       font-size: 18px;
       color: #050038;
-      @media screen and (max-width: 1192px) {
+      @include xl {
         margin-right: 15px;
         padding: 0;
       }
-      @media screen and (max-width: 575px) {
+      @include sm {
         margin-right: 5px;
         font-size: 16px;
         white-space: nowrap;
@@ -100,10 +103,10 @@ header {
         color: #0555ff;
         border: 2px solid #0555ff;
       }
-      @media screen and (max-width: 1192px) {
+      @include xl {
         padding-right: 12px;
       }
-      @media screen and (max-width: 575px) {
+      @include sm {
         max-width: 100px;
         min-height: 30px;
         font-size: 14px;
@@ -112,14 +115,9 @@ header {
       }
     }
   }
-
   .navbar-toggler {
-    margin: 0 auto;
-    @media screen and (max-width: 767px) {
-      margin-right: 280px;
-    }
-    @media screen and (max-width: 575px) {
-      margin-right: 170px;
+    @include sm {
+      margin-right: 30px;
       margin-left: 0;
     }
   }

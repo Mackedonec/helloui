@@ -1,7 +1,7 @@
 .first {
   margin-top: 100px;
   text-align: center;
-  @media screen and (max-width: 991px) {
+  @include lg {
     margin-top: 200px;
   }
   &__title {
@@ -13,11 +13,11 @@
     font-weight: 900;
     line-height: 1.25;
     margin-bottom: 6px;
-    @media screen and (max-width: 991px) {
+    @include lg {
       max-width: 500px;
       font-size: 56px;
     }
-    @media screen and (max-width: 575px) {
+    @include sm {
       max-width: 300px;
       font-size: 36px;
     }
@@ -30,11 +30,11 @@
     font-size: 22px;
     line-height: 1.45;
     margin-bottom: 28px;
-    @media screen and (max-width: 991px) {
+    @include lg {
       max-width: 450px;
       font-size: 18px;
     }
-    @media screen and (max-width: 575px) {
+    @include sm {
       max-width: 350px;
       font-size: 16px;
       margin-bottom: 10px;
@@ -55,7 +55,7 @@
       border: 2px solid transparent;
       border-radius: 30px;
       background-color: #0555ff;
-      @media screen and (max-width: 991px) {
+      @include lg {
         padding-right: 12px;
         white-space: nowrap;
         font-size: 16px;
@@ -80,7 +80,7 @@
         border-radius: 30px;
         color: #0555ff;
         border: 2px solid #0555ff;
-        @media screen and (max-width: 991px) {
+        @include lg {
           padding-right: 12px;
           white-space: nowrap;
           font-size: 16px;

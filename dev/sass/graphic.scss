@@ -1,5 +1,5 @@
 .graphic {
-  margin: 43px auto;
+  margin: 43px auto -43px;
   &__img-box {
     position: relative;
     width: 100%;
@@ -9,7 +9,6 @@
   }
   &__image {
     @include abs-position;
-    background-image: url(assets/img/center.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

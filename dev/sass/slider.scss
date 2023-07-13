@@ -1,10 +1,68 @@
 .slider {
-  margin: 100px 12px;
-  .slider-title {
+  margin: 100px 0;
+  text-align: center;
+  .slider-text {
     text-align: center;
-    margin-top: -43px;
     margin-bottom: 26px;
     font-family: $font-primary;
+  }
+  .slider-title {
+    margin: 200px auto 30px;
+    max-width: 895px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    @include lg {
+      margin: 150px auto 30px;
+      font-size: 36px;
+    }
+    @include sm {
+      margin: 50px auto 30px;
+      font-size: 24px;
+    }
+  }
+  .slider-descript {
+    max-width: 780px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    @include lg {
+      font-size: 18px;
+    }
+    @include sm {
+      font-size: 16px;
+    }
+  }
+  .slider-button {
+    color: #0555ff;
+    font-size: 15px;
+    line-height: 2.13;
+    position: relative;
+    margin-top: 45px;
+    border-radius: 30px;
+    background-color: #0555ff1a;
+    width: 100%;
+    max-width: 245px;
+    min-height: 50px;
+    padding-left: 50px;
+    @include sm {
+      max-width: 345px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 11px;
+      left: 20px;
+      width: 27px;
+      height: 27px;
+      background-image: url(assets/img/button-img.svg);
+    }
+    &:hover {
+      background-color: #0555ff;
+      color: #ffffff;
+    }
   }
   .first-screen-slider {
     max-width: 1050px;
@@ -33,6 +91,12 @@
       width: 30px;
       height: 3px;
       background-color: #050038;
+      @include sm {
+        top: 14px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
       button {
         @include visually-hidden;
       }
@@ -50,6 +114,11 @@
       opacity: 0.9;
       background-color: transparent;
       border: 1px solid #050038;
+      @include sm {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
     }
   }
 }

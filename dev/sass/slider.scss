@@ -47,6 +47,7 @@
     max-width: 245px;
     min-height: 50px;
     padding-left: 50px;
+    border: 1px solid #0555ff;
     @include sm {
       max-width: 345px;
     }
@@ -60,6 +61,7 @@
       background-image: url(assets/img/button-img.svg);
     }
     &:hover {
+      border: 1px solid #0555ff;
       background-color: #0555ff;
       color: #ffffff;
     }

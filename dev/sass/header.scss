@@ -51,7 +51,7 @@ header {
             color: #ffffff;
           }
           &:hover {
-            color: #ff0000;
+            color: #0555ff;
           }
         }
       }
@@ -84,6 +84,9 @@ header {
         margin-right: 5px;
         font-size: 16px;
         white-space: nowrap;
+      }
+      &:hover {
+        color: #0555ff;
       }
     }
     &__button {

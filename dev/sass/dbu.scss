@@ -1,9 +1,48 @@
 .dbu {
-  max-width: 1015px;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
   @include xxl {
     max-width: 900px;
+  }
+  .content-box__title {
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  .content-box__descript {
+    padding-top: 17px;
+    padding-right: 78px;
+    padding-bottom: 15px;
+    color: #5b5e6d;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .content-box__link {
+    position: relative;
+    margin-left: -5px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #0555ff;
+    }
+    &:hover {
+      color: #0555ff;
+      &::after {
+        background-color: #010101;
+      }
+    }
   }
   .container {
     &.first {
@@ -13,51 +52,56 @@
         text-align: center;
       }
       .content-box {
-        margin-top: 117px;
+        margin-left: 152px;
+        margin-top: 97px;
         text-align: left;
+        @include xxl {
+          margin: 120px auto 0;
+          text-align: left;
+        }
         @include xl {
           max-width: 400px;
           margin: 100px auto 0;
           text-align: center;
         }
+        @include sm {
+          margin: 0 auto;
+        }
         &__title {
-          font-size: 72px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: normal;
+          @extend .content-box__title;
+          @include sm {
+            font-size: 36px;
+          }
         }
         &__descript {
-          padding-top: 17px;
-          padding-right: 53px;
-          padding-bottom: 15px;
-          color: #5b5e6d;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 32px;
-          @include xl {
+          @extend .content-box__descript;
+          @include xxl {
             max-width: 400px;
+            text-align: left;
+            padding-right: 50px;
+          }
+          @include xl {
             margin: 0 auto;
             text-align: center;
             padding-right: 0;
           }
+          @include sm {
+            font-size: 16px;
+          }
         }
         &__link {
-          margin-left: -5px;
-          color: #000;
-          font-size: 18px;
-          font-weight: 500;
+          @extend .content-box__link;
         }
       }
       .img-box {
         position: relative;
         width: 686px;
-        margin: 12px 1px 1px 11px;
+        margin: -11px 1px 1px -34px;
         img {
           width: 100%;
         }
         @include xxl {
-          margin: 12px 1px 1px -60px;
+          margin: 12px 1px 1px -234px;
         }
         @include xl {
           left: 20px;
@@ -73,52 +117,59 @@
         text-align: center;
       }
       .content-box {
-        margin-left: 64px;
-        margin-top: 176px;
+        margin-left: 87px;
+        margin-top: 177px;
         text-align: left;
+        @include xxl {
+          margin-left: 170px;
+          margin-top: 86px;
+          padding-right: 0px;
+        }
         @include xl {
           max-width: 400px;
-          margin: 70px auto 0;
+          margin: 50px auto 0;
           text-align: center;
         }
         @include md {
           margin: 30px auto 0;
         }
+        @include sm {
+          margin: 0 auto;
+        }
         &__title {
-          font-size: 72px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: normal;
+          @extend .content-box__title;
+          @include sm {
+            font-size: 36px;
+          }
         }
         &__descript {
-          padding-top: 17px;
-          padding-right: 53px;
-          padding-bottom: 15px;
-          color: #5b5e6d;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 32px;
+          @extend .content-box__descript;
+          padding-right: 148px;
+          @include xxl {
+            padding-right: 0;
+          }
           @include xl {
             max-width: 400px;
             margin: 0 auto;
             text-align: center;
-            padding-right: 0;
+          }
+          @include sm {
+            font-size: 16px;
           }
         }
         &__link {
-          margin-left: -5px;
-          color: #000;
-          font-size: 18px;
-          font-weight: 500;
+          @extend .content-box__link;
         }
       }
       .img-box {
         position: relative;
-        width: 686px;
-        margin: 12px 1px 1px -322px;
+        width: 657px;
+        margin: 12px 1px 1px -139px;
+        img {
+          width: 100%;
+        }
         @include xxl {
-          margin: 12px 1px 1px -280px;
+          margin: 12px 1px 1px -80px;
         }
         @include xl {
           right: 50px;
@@ -128,46 +179,71 @@
         @include md {
           right: 30px;
         }
-
-        img {
-          width: 100%;
-        }
       }
     }
     &.third {
       margin-bottom: 96px;
+      @include xl {
+        max-width: 650px;
+        text-align: center;
+      }
       .content-box {
+        margin-left: 148px;
         margin-top: 117px;
         text-align: left;
+        @include xxl {
+          margin: 120px auto 0;
+          text-align: left;
+        }
+        @include xl {
+          max-width: 400px;
+          margin: 50px auto 0;
+          text-align: center;
+        }
+        @include sm {
+          margin: 0 auto;
+        }
         &__title {
-          font-size: 72px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: normal;
+          @extend .content-box__title;
+          @include sm {
+            font-size: 36px;
+          }
         }
         &__descript {
-          padding-top: 17px;
-          padding-right: 53px;
-          padding-bottom: 15px;
-          color: #5b5e6d;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 32px;
+          @extend .content-box__descript;
+          @include xxl {
+            max-width: 400px;
+            text-align: left;
+            padding-right: 50px;
+          }
+          @include xl {
+            margin: 0 auto;
+            text-align: center;
+            padding-right: 0;
+          }
+          @include sm {
+            font-size: 16px;
+          }
         }
         &__link {
-          margin-left: -5px;
-          color: #000;
-          font-size: 18px;
-          font-weight: 500;
+          @extend .content-box__link;
         }
       }
       .img-box {
+        position: relative;
+        margin: 16px 1px 1px -34px;
         width: 686px;
         img {
           width: 100%;
         }
-        margin: 12px 1px 1px 11px;
+        @include xxl {
+          margin: 12px 1px 1px -234px;
+        }
+        @include xl {
+          left: 20px;
+          max-width: 100%;
+          margin: 0 auto;
+        }
       }
     }
   }

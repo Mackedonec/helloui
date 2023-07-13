@@ -34,11 +34,11 @@ $(document).ready(function () {
     ],
   });
 
-  // Fancybox.bind("[data-fancybox]", {
-  //   loop: true,
-  //   buttons: ["zoom", "slideShow", "fullScreen", "close"],
-  //   animationEffect: "fade",
-  //   transitionEffect: "slide",
-  //   animationDuration: 600,
-  // });
+  Fancybox.bind("[data-fancybox]", {
+    loop: true,
+    buttons: ["zoom", "slideShow", "fullScreen", "close"],
+    animationEffect: "fade",
+    transitionEffect: "slide",
+    animationDuration: 600,
+  });
 });

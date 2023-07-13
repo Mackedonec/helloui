@@ -1,0 +1,174 @@
+.dbu {
+  max-width: 1015px;
+  margin: 0 auto;
+  text-align: center;
+  @include xxl {
+    max-width: 900px;
+  }
+  .container {
+    &.first {
+      margin-bottom: 96px;
+      @include xl {
+        max-width: 650px;
+        text-align: center;
+      }
+      .content-box {
+        margin-top: 117px;
+        text-align: left;
+        @include xl {
+          max-width: 400px;
+          margin: 100px auto 0;
+          text-align: center;
+        }
+        &__title {
+          font-size: 72px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+        }
+        &__descript {
+          padding-top: 17px;
+          padding-right: 53px;
+          padding-bottom: 15px;
+          color: #5b5e6d;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          @include xl {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            padding-right: 0;
+          }
+        }
+        &__link {
+          margin-left: -5px;
+          color: #000;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+      .img-box {
+        position: relative;
+        width: 686px;
+        margin: 12px 1px 1px 11px;
+        img {
+          width: 100%;
+        }
+        @include xxl {
+          margin: 12px 1px 1px -60px;
+        }
+        @include xl {
+          left: 20px;
+          max-width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+    &.second {
+      margin-bottom: 96px;
+      @include xl {
+        max-width: 650px;
+        text-align: center;
+      }
+      .content-box {
+        margin-left: 64px;
+        margin-top: 176px;
+        text-align: left;
+        @include xl {
+          max-width: 400px;
+          margin: 70px auto 0;
+          text-align: center;
+        }
+        @include md {
+          margin: 30px auto 0;
+        }
+        &__title {
+          font-size: 72px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+        }
+        &__descript {
+          padding-top: 17px;
+          padding-right: 53px;
+          padding-bottom: 15px;
+          color: #5b5e6d;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          @include xl {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            padding-right: 0;
+          }
+        }
+        &__link {
+          margin-left: -5px;
+          color: #000;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+      .img-box {
+        position: relative;
+        width: 686px;
+        margin: 12px 1px 1px -322px;
+        @include xxl {
+          margin: 12px 1px 1px -280px;
+        }
+        @include xl {
+          right: 50px;
+          max-width: 100%;
+          margin: 0 auto;
+        }
+        @include md {
+          right: 30px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &.third {
+      margin-bottom: 96px;
+      .content-box {
+        margin-top: 117px;
+        text-align: left;
+        &__title {
+          font-size: 72px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+        }
+        &__descript {
+          padding-top: 17px;
+          padding-right: 53px;
+          padding-bottom: 15px;
+          color: #5b5e6d;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+        }
+        &__link {
+          margin-left: -5px;
+          color: #000;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+      .img-box {
+        width: 686px;
+        img {
+          width: 100%;
+        }
+        margin: 12px 1px 1px 11px;
+      }
+    }
+  }
+}

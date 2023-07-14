@@ -6,6 +6,9 @@
     max-width: 1106px;
     height: 846px;
     margin: 0 auto;
+    @include xxl-plus {
+      left: -10px;
+    }
   }
   &__image {
     @include abs-position;

@@ -3,7 +3,7 @@
   text-align: center;
   overflow: hidden;
   @include xxl {
-    max-width: 900px;
+    max-width: 1200px;
   }
   .content-box__title {
     font-size: 72px;
@@ -42,6 +42,14 @@
       &::after {
         background-color: #010101;
       }
+    }
+  }
+  img {
+    width: 100%;
+    transition: 0.5s;
+    &:hover {
+      transition: 0.5s;
+      transform: scale(1.05);
     }
   }
   .container {
@@ -96,9 +104,9 @@
       .img-box {
         position: relative;
         width: 686px;
-        margin: -11px 1px 1px -34px;
+        margin: -11px 1px 1px -17px;
         img {
-          width: 100%;
+          @extend img;
         }
         @include xxl {
           margin: 12px 1px 1px -234px;
@@ -146,12 +154,13 @@
           @extend .content-box__descript;
           padding-right: 148px;
           @include xxl {
-            padding-right: 0;
+            padding-right: 110px;
           }
           @include xl {
             max-width: 400px;
             margin: 0 auto;
             text-align: center;
+            padding-right: 0;
           }
           @include sm {
             font-size: 16px;
@@ -166,7 +175,7 @@
         width: 657px;
         margin: 12px 1px 1px -139px;
         img {
-          width: 100%;
+          @extend img;
         }
         @include xxl {
           margin: 12px 1px 1px -80px;
@@ -231,10 +240,10 @@
       }
       .img-box {
         position: relative;
-        margin: 16px 1px 1px -34px;
+        margin: 16px 1px 1px -17px;
         width: 686px;
         img {
-          width: 100%;
+          @extend img;
         }
         @include xxl {
           margin: 12px 1px 1px -234px;

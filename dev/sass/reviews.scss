@@ -1,6 +1,6 @@
 .reviews {
   background-color: #f8f8fa;
-  margin: 38px auto -8px;
+  margin: 51px auto -54px;
   text-align: center;
   padding-top: 150px;
   padding-bottom: 150px;
@@ -9,24 +9,42 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 32px;
-    padding-bottom: 40px;
+    line-height: 1.44;
+    margin-left: -18px;
+    margin-top: 5px;
+    @include md {
+      font-size: 14px;
+    }
   }
   &__title {
     font-size: 72px;
     font-style: normal;
     font-weight: 900;
-    line-height: 32px;
-    padding-bottom: 70px;
+    line-height: 1.44;
+    padding-bottom: 40px;
+    margin-left: -18px;
+    margin-top: -10px;
+    @include xl {
+      font-size: 54px;
+      padding-bottom: 35px;
+    }
+    @include md {
+      font-size: 36px;
+      padding-bottom: 15px;
+    }
   }
   .container {
     max-width: 1350px;
+    @include xl {
+      padding: 0 25px;
+    }
   }
   .card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 14px auto;
+
     position: relative;
     width: 100%;
     max-width: 420px;
@@ -34,6 +52,18 @@
     background-color: #fff;
     border-radius: 10px;
     border: 1px solid #0000001a;
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:nth-of-type(4),
+    &:nth-of-type(6) {
+      .reviews-card {
+        &__name {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
   }
   .reviews-card {
     &::after {
@@ -53,11 +83,7 @@
       top: 18px;
       left: 18px;
     }
-    &__check {
-      position: absolute;
-      top: 16px;
-      left: 154px;
-    }
+
     &__name {
       font-size: 16px;
       font-weight: 500;
@@ -66,6 +92,18 @@
       text-align: left;
       padding-top: 18px;
       padding-left: 60px;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 22px;
+        right: -22px;
+        width: 16px;
+        height: 16px;
+        background-image: url(assets/img/check.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     }
     &__name-fb {
       color: #596068;

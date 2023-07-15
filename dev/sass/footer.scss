@@ -1,28 +1,215 @@
 .footer {
-  position: relative;
-  margin: 0 auto;
-  padding: 0;
-  max-width: 100%;
-  min-height: 961px;
+  padding-top: 45px;
+  margin-top: -81px;
+  text-align: center;
+  background-image: url(assets/img/footer-bgi.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-image: url(assets/img/footer-bgi.png);
+  background-position: top left;
+  .container {
+    max-width: 1350px;
+  }
+  &__title {
+    padding-top: 201px;
+    max-width: 640px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.18;
+    span {
+      letter-spacing: 1px;
+    }
+    @include xl {
+      font-size: 54px;
+    }
+    @include md {
+      max-width: 420px;
+      font-size: 36px;
+    }
+  }
+  &__email {
+    margin: 34px auto 1px;
+    display: flex;
+    width: 100%;
+    max-width: 747px;
+    min-height: 80px;
+    @include xl {
+      max-width: 547px;
+      min-height: 60px;
+    }
+    @include md {
+      max-width: 347px;
+      min-height: 40px;
+    }
+    .form-control {
+      padding-left: 31px;
+      color: #ffffff;
+      background-color: transparent;
+      border-radius: 10px 0px 0px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      &::placeholder {
+        color: #ffffff;
+        font-family: $font-primary;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.45;
+        padding-top: 14px;
+        @include xl {
+          font-size: 16px;
+        }
+        @include md {
+          font-size: 14px;
+        }
+      }
+      &:focus {
+        box-shadow: none;
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 221px;
+    .btn {
+      border-radius: 0px 10px 10px 0px;
+      border: 1px solid #ffffff80;
+      background-color: #0555ff;
+      color: #ffffff;
+      font-family: $font-primary;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.45;
+      width: 100%;
+      @include xl {
+        font-size: 16px;
+      }
+      @include md {
+        font-size: 14px;
+      }
+      &:hover,
+      &:focus-visible {
+        box-shadow: none;
+        background-color: transparent;
+      }
+      &:active {
+        color: #ffffff;
+        border: 1px solid #ffffff80;
+      }
+    }
+  }
+  .contacts {
+    margin-top: 150px;
+    @include md {
+      margin-top: 50px;
+    }
+    @include sm {
+      margin-top: 30px;
+    }
+    &__item {
+      @include unlist;
+      text-align: left;
+      @include md {
+        text-align: center;
+      }
+    }
+    &__title {
+      text-align: left;
+      color: #ffffff;
+      @include md {
+        text-align: center;
+      }
+    }
+    &__link {
+      text-decoration: none;
+      color: #7884a6;
+    }
+    &__icon-box {
+      padding-left: 6px;
+      padding-top: 11px;
+      text-align: left;
+      @include md {
+        text-align: center;
+      }
+    }
+    img {
+      width: 94px;
+      height: 16px;
+    }
+  }
+  .spelon {
+    .contacts__title {
+      padding-bottom: 33px;
+      padding-left: 6px;
+    }
+    .contacts__item {
+      margin-top: -2px;
+      margin-left: -29px;
+      margin-bottom: 13px;
+    }
+  }
+
+  .resources {
+    margin-left: 11px;
+    @include md {
+      display: none;
+    }
+    .contacts__title {
+      padding-top: 16px;
+      padding-bottom: 20px;
+    }
+    .contacts__item {
+      margin-left: -28px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .company {
+    margin-left: 68px;
+    @include lg {
+      display: none;
+    }
+    .contacts__title {
+      padding-top: 16px;
+      padding-bottom: 20px;
+    }
+    .contacts__item {
+      margin-left: -30px;
+      margin-bottom: 18px;
+    }
+  }
+  .legal {
+    margin-left: 19px;
+    @include xl {
+      display: none;
+    }
+    .contacts__title {
+      padding-top: 16px;
+      padding-bottom: 20px;
+    }
+    .contacts__item {
+      margin-left: -32px;
+      margin-bottom: 18px;
+    }
+  }
+
   &__bottom {
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: #0f0937;
     height: 59px;
     span {
-      padding: 20px 113px 1px 1px;
+      padding: 20px 116px 20px 1px;
       position: relative;
-      text-align: center;
       color: #ffffff;
+      font-family: $font-secondary;
       &::after {
         content: "";
         position: absolute;

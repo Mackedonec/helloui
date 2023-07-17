@@ -48,7 +48,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     margin: 14px auto;
-
     position: relative;
     width: 100%;
     max-width: 420px;
@@ -56,6 +55,7 @@
     background-color: $white-color;
     border-radius: 10px;
     border: 1px solid #0000001a;
+    @include t05s;
     &:nth-of-type(2),
     &:nth-of-type(3),
     &:nth-of-type(4),
@@ -67,6 +67,12 @@
           }
         }
       }
+    }
+    &:hover {
+      z-index: 1;
+      @include t05s;
+      transform: translate(0, -10px) scale(1.05);
+      border: 1px solid $primary-color;
     }
   }
   .reviews-card {

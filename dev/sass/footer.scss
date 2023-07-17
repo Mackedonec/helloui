@@ -59,7 +59,7 @@
         font-weight: 400;
         line-height: 1.45;
         padding-top: 14px;
-        transition: 0.5s;
+        @include t05s;
         @include xl {
           font-size: 1rem;
         }
@@ -68,7 +68,7 @@
         }
       }
       &:hover {
-        transition: 0.5s;
+        @include t05s;
         box-shadow: none;
         border: 1px solid $white-color;
         &::placeholder {
@@ -76,7 +76,7 @@
         }
       }
       &:focus {
-        transition: 0.5s;
+        @include t05s;
         box-shadow: none;
         &::placeholder {
           color: transparent;
@@ -99,7 +99,7 @@
       font-weight: 400;
       line-height: 1.45;
       width: 100%;
-      transition: 0.5s;
+      @include t05s;
       @include xl {
         font-size: 1rem;
       }
@@ -108,14 +108,14 @@
       }
       &:hover,
       &:focus-visible {
-        transition: 0.5s;
+        @include t05s;
         color: $footer-spec-color;
         box-shadow: none;
         background-color: transparent;
         border: 1px solid $white-color;
       }
       &:active {
-        transition: 0.5s;
+        @include t05s;
         color: $footer-spec-color;
         border: 1px solid $gray-color-light;
       }
@@ -132,10 +132,10 @@
     &__item {
       @include unlist;
       text-align: left;
-      transition: 0.5s;
+      @include t05s;
       &:hover {
         transform: translate(5px, 0);
-        transition: 0.5s;
+        @include t05s;
         .contacts__link {
           color: $white-color;
         }
@@ -152,7 +152,7 @@
       }
     }
     &__link {
-      transition: 0.5s;
+      @include t05s;
       text-decoration: none;
       color: $footer-spec-color;
     }

@@ -12,11 +12,6 @@ $gray-color-light: #ffffff80;
 $gray-color: #5b5e6d;
 $footer-spec-color: #7884a6;
 
-///size///
-$gap-sm: 10px;
-$gap: 20px;
-$gap-lg: 45px;
-
 ///mixins///
 @mixin abs-position($top: 0, $right: 0, $bottom: 0, $left: 0) {
   position: absolute;
@@ -39,6 +34,14 @@ $gap-lg: 45px;
   margin: -1px;
   padding: 0;
   border: 0;
+}
+
+@mixin t05s {
+  transition: 0.5s;
+}
+
+@mixin t1s {
+  transition: 1s;
 }
 
 @mixin xxl-plus {

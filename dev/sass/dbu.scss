@@ -25,7 +25,7 @@
     font-size: 1.125rem;
     font-weight: 500;
     text-decoration: none;
-    transition: 0.5s;
+    @include t05s;
     &::after {
       content: "";
       position: absolute;
@@ -34,22 +34,22 @@
       width: 100%;
       height: 2px;
       background-color: $primary-color;
-      transition: 0.5s;
+      @include t05s;
     }
     &:hover {
-      transition: 0.5s;
+      @include t05s;
       color: $primary-color;
       &::after {
-        transition: 0.5s;
-        background-color: #010101;
+        @include t05s;
+        background-color: $secondary-color;
       }
     }
   }
   img {
     width: 100%;
-    transition: 0.5s;
+    @include t05s;
     &:hover {
-      transition: 0.5s;
+      @include t05s;
       transform: scale(1.05);
     }
   }

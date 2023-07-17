@@ -9,35 +9,34 @@
   .slider-title {
     margin: 200px auto 30px;
     max-width: 895px;
-    font-size: 42px;
+    font-size: 2.625rem;
     font-weight: 700;
-    line-height: normal;
     @include lg {
       margin: 150px auto 30px;
-      font-size: 36px;
+      font-size: 2.25rem;
     }
     @include sm {
       margin: 50px auto 30px;
-      font-size: 24px;
+      font-size: 1.5rem;
     }
   }
   .slider-descript {
     max-width: 780px;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.6;
     @include lg {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
     @include sm {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
   .slider-button {
-    color: #0555ff;
-    font-size: 15px;
+    color: $primary-color;
+    font-size: 0.937rem;
     line-height: 2.13;
     position: relative;
     margin-top: 45px;
@@ -47,7 +46,8 @@
     max-width: 245px;
     min-height: 50px;
     padding-left: 50px;
-    border: 1px solid #0555ff;
+    border: 1px solid $primary-color;
+    transition: 0.5s;
     @include sm {
       max-width: 345px;
     }
@@ -61,9 +61,10 @@
       background-image: url(assets/img/button-img.svg);
     }
     &:hover {
-      border: 1px solid #0555ff;
-      background-color: #0555ff;
-      color: #ffffff;
+      transition: 0.5s;
+      border: 1px solid $primary-color;
+      background-color: $primary-color;
+      color: $white-color;
     }
   }
   .first-screen-slider {
@@ -89,10 +90,10 @@
     justify-content: center;
     .slick-active {
       position: relative;
-      top: 16px;
+      top: 17px;
       width: 30px;
       height: 3px;
-      background-color: #050038;
+      background-color: $secondary-color;
       @include sm {
         top: 14px;
         width: 8px;
@@ -109,13 +110,13 @@
     }
     button {
       outline: none;
-      font-size: 0;
+      font-size: 0rem;
       padding: 0;
       width: 30px;
       height: 3px;
       opacity: 0.9;
       background-color: transparent;
-      border: 1px solid #050038;
+      border: 1px solid $secondary-color;
       @include sm {
         width: 8px;
         height: 8px;

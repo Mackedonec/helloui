@@ -5,14 +5,16 @@ $font-title: "CircularStd", sans-serif;
 $font-size: 16px;
 
 ///colors///
-$primary-color: #ee3b24;
-$secondary-color: #b2b2b2;
+$primary-color: #0555ff;
+$secondary-color: #050038;
 $white-color: #ffffff;
-$dark-color: #010101;
-$gray-color: #fefefe;
+$gray-color-light: #ffffff80;
+$gray-color: #5b5e6d;
+$footer-spec-color: #7884a6;
 
 ///size///
-$gap: 15px;
+$gap-sm: 10px;
+$gap: 20px;
 $gap-lg: 45px;
 
 ///mixins///
@@ -37,10 +39,6 @@ $gap-lg: 45px;
   margin: -1px;
   padding: 0;
   border: 0;
-}
-
-@mixin text-center {
-  text-align: center;
 }
 
 @mixin xxl-plus {

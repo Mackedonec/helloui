@@ -32,7 +32,7 @@ header {
       max-width: 525px;
       margin-right: 430px;
       @include xl {
-        margin-right: 300px;
+        margin-right: 400px;
       }
       @include lg {
         margin: auto;
@@ -45,13 +45,16 @@ header {
         }
         .nav-link {
           margin: 0;
-          color: #050038;
+          color: $secondary-color;
           font-weight: 500;
+          transition: 0.5s;
           @include lg {
-            color: #ffffff;
+            color: $white-color;
           }
           &:hover {
-            color: #0555ff;
+            transform: translate(0, -5px);
+            transition: 0.5s;
+            color: $primary-color;
           }
         }
       }
@@ -74,34 +77,39 @@ header {
       text-decoration: none;
       margin-right: 35px;
       font-family: $font-secondary;
-      font-size: 18px;
-      color: #050038;
+      font-size: 1.125rem;
+      color: $secondary-color;
+      transition: 0.5s;
       @include xl {
         margin-right: 15px;
         padding: 0;
       }
       @include sm {
         margin-right: 5px;
-        font-size: 16px;
+        font-size: 1rem;
         white-space: nowrap;
       }
       &:hover {
-        color: #0555ff;
+        transform: translate(0, 5px);
+        transition: 0.5s;
+        color: $primary-color;
       }
     }
     &__button {
       padding-right: 25px;
-      color: #ffffff;
-      font-size: 18px;
+      color: $white-color;
+      font-size: 1.125rem;
       width: 100%;
       max-width: 180px;
       min-height: 50px;
       border: 2px solid transparent;
       border-radius: 30px;
-      background-color: #0555ff;
+      background-color: $primary-color;
+      transition: 0.5s;
       &:hover {
-        color: #0555ff;
-        border: 2px solid #0555ff;
+        transition: 0.5s;
+        color: $primary-color;
+        border: 2px solid $primary-color;
       }
       @include xl {
         padding-right: 12px;
@@ -109,7 +117,7 @@ header {
       @include sm {
         max-width: 100px;
         min-height: 30px;
-        font-size: 14px;
+        font-size: 0.875rem;
         white-space: nowrap;
         text-align: center;
       }

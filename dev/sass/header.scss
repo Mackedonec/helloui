@@ -53,6 +53,9 @@ header {
             @include t05s;
             color: $primary-color;
           }
+          &.active {
+            color: $primary-color;
+          }
         }
       }
     }
